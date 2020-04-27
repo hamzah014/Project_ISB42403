@@ -21,6 +21,7 @@
           <h4 class="card-title">UNIKL MIIT</h4>
           <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
           <a href="#" class="btn btn-primary">See Profile</a>
+            <a href="#" class="btn btn-primary">See Profile</a>
         </div>
       </div>
       <br>
