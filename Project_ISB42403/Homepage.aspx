@@ -14,7 +14,7 @@
     
     
     <div class="container">
-      <h2>Bootstraps - Card Picture</h2>
+      <h2>Bootstraps - Card Image 1</h2>
       <div class="card" style="width:50%">
         <img class="card-img-top" src="https://graduan.sgp1.digitaloceanspaces.com/media/278719/original/4a65c8b0-4570-448b-83ec-efeea9ba73c7-Mjc4NzE5.png" alt="Card image" style="width:100%" />
         <div class="card-body">
