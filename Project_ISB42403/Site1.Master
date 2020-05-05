@@ -1,0 +1,94 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Project_ISB42403.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Covid-News</title>
+    <!--<link href="/assets/img/favicon.png" rel="icon" />-->
+    <link href="data:image/png;base64,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" rel="icon" />
+
+
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <meta content="" name="descriptison">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+    <link href="/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="/assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="/assets/vendor/venobox/venobox.css" rel="stylesheet">
+    <link href="/assets/vendor/aos/aos.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="/assets/css/style.css" rel="stylesheet">
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top" style="background-color: red;">
+        <div class="container-fluid">
+
+            <div class="row justify-content-center">
+                <div class="col-xl-9 d-flex align-items-center">
+                    <!--<h1 class="logo mr-auto"><a href="index.html">Techie</a></h1>-->
+                    <h1 class="logo mr-auto">
+                        <asp:DynamicHyperLink runat="server" NavigateUrl="~/Default.aspx">Covid News</asp:DynamicHyperLink></h1>
+
+                    <nav class="nav-menu d-none d-lg-block">
+                        <ul>
+                            <li class="active">
+                                <asp:DynamicHyperLink runat="server" NavigateUrl="~/Default.aspx">Home</asp:DynamicHyperLink>
+                            </li>
+                            <li>
+                                <asp:DynamicHyperLink runat="server" NavigateUrl="~/Default.aspx">Information</asp:DynamicHyperLink>
+                            </li>
+                            <li>
+                                <asp:DynamicHyperLink runat="server" NavigateUrl="~/Default.aspx">Health Advisory</asp:DynamicHyperLink>
+                            </li>
+                            <li>
+                                <asp:DynamicHyperLink runat="server" NavigateUrl="~/Default.aspx">Check Sympthoms</asp:DynamicHyperLink>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <!-- End Header -->
+    <main id="main">
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+
+    </main>
+
+    <script src="/assets/vendor/jquery/jquery.min.js"></script>
+    <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+    <script src="/assets/vendor/php-email-form/validate.js"></script>
+    <script src="/assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+    <script src="/assets/vendor/counterup/counterup.min.js"></script>
+    <script src="/assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="/assets/vendor/venobox/venobox.min.js"></script>
+    <script src="/assets/vendor/aos/aos.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="/assets/js/main.js"></script>
+
+
+</body>
+</html>
