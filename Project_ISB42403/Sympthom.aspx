@@ -1,9 +1,7 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="CheckSympthom.aspx.cs" Inherits="Project_ISB42403.CheckSympthom" %>
-
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Sympthom.aspx.cs" Inherits="Project_ISB42403.Sympthom" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact section-bg">
         <div class="container" data-aos="fade-up">
@@ -15,11 +13,13 @@
 
             <div class="row">
 
-                <div class="col-lg-6">
-                    <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                        <div class="form-row">
+                <div class="col-lg-12">
+                    <form class="php-email-form" runat="server">
+                        <div class="form-row"> 
                             <div class="col-md-6 form-group">
-                                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                                <h4>Name :</h4>
+                                <asp:TextBox runat="server" ID="txt_name" CssClass="form-control"></asp:TextBox>
+                                
                                 <div class="validate"></div>
                             </div>
                             <div class="col-md-6 form-group">
@@ -47,8 +47,11 @@
 
             </div>
 
+            <div class="row">
+                <!--  result here -->
+            </div>
+
         </div>
     </section>
     <!-- End Contact Section -->
-
 </asp:Content>
