@@ -135,6 +135,8 @@
     <Content Include="assets\vendor\waypoints\jquery.waypoints.min.js" />
     <Content Include="Default.aspx" />
     <Content Include="Homepage.aspx" />
+    <Content Include="Information.aspx" />
+    <Content Include="Profile.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -151,6 +153,20 @@
     </Compile>
     <Compile Include="Homepage.aspx.designer.cs">
       <DependentUpon>Homepage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Information.aspx.cs">
+      <DependentUpon>Information.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Information.aspx.designer.cs">
+      <DependentUpon>Information.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Profile.aspx.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Profile.aspx.designer.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site1.Master.cs">
@@ -190,7 +206,9 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="assets\images\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

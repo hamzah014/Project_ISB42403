@@ -52,7 +52,7 @@
                                 <asp:DynamicHyperLink runat="server" NavigateUrl="~/Default.aspx">Home</asp:DynamicHyperLink>
                             </li>
                             <li>
-                                <asp:DynamicHyperLink runat="server" NavigateUrl="~/Default.aspx">Information</asp:DynamicHyperLink>
+                                <asp:DynamicHyperLink runat="server" NavigateUrl="~/Information.aspx">Information</asp:DynamicHyperLink>
                             </li>
                             <li>
                                 <asp:DynamicHyperLink runat="server" NavigateUrl="~/Default.aspx">Health Advisory</asp:DynamicHyperLink>
@@ -68,7 +68,7 @@
         </div>
     </header>
     <!-- End Header -->
-    <main id="main">
+    <main id="main" runat="server">
 
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         </asp:ContentPlaceHolder>
