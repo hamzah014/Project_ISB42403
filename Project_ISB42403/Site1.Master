@@ -58,7 +58,7 @@
                                 <asp:DynamicHyperLink runat="server" NavigateUrl="~/Default.aspx">Health Advisory</asp:DynamicHyperLink>
                             </li>
                             <li>
-                                <asp:DynamicHyperLink runat="server" NavigateUrl="~/Default.aspx">Check Sympthoms</asp:DynamicHyperLink>
+                                <asp:DynamicHyperLink runat="server" NavigateUrl="~/Sympthom.aspx">Check Sympthoms</asp:DynamicHyperLink>
                             </li>
                         </ul>
                     </nav>
