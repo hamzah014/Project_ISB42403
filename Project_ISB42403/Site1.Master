@@ -53,7 +53,7 @@
         {
             infoclass = "active";
         }
-        else if (Request.Url.AbsolutePath.Contains("About"))
+        else if (Request.Url.AbsolutePath.Contains("Profiles"))
         {
             aboutclass = "active";
         }
