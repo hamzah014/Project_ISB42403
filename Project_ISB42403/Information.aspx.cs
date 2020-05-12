@@ -11,14 +11,14 @@ namespace Project_ISB42403
     public partial class Information : System.Web.UI.Page
     {
         int totalcase = 673;
-        int totalrecoverd = 49;
+        int totalrecovered = 49;
         int totaldeath = 2;
 
         string year = "2020";
 
         // [2,3] means, 2 row 3 column
         // date , newcases , recoveredcases , death
-        string[,] covid = new string[14, 4] {
+        string[,] covid = new string[42, 4] {
                 { "18 March 2020" , "117" , "11" , "0" }, //790c , 60rc
                 { "19 March 2020" , "110" , "15" , "0" }, //900c , 75rc
                 { "20 March 2020" , "130" , "12" , "0" }, //1030c , 87rc
@@ -31,8 +31,36 @@ namespace Project_ISB42403
                 { "27 March 2020" , "130" , "41" , "3" }, //2161c , 26d , 256rc
                 { "28 March 2020" , "159" , "64" , "1" }, //2320c , 27d , 320rc
                 { "29 March 2020" , "150" , "68" , "7" }, //2470c , 34d , 388rc
-                { "30 March 2020" , "156" , "3" , "91" }, //2626c , 37d , 479rc
-                { "31 March 2020" , "140" , "6" , "58" } //2766c , 43d , 537rc
+                { "30 March 2020" , "156" , "91" , "3" }, //2626c , 37d , 479rc
+                { "31 March 2020" , "140" , "58" , "6" }, //2766c , 43d , 537rc
+                { "1 April 2020" , "142" , "108" , "2" }, //2908c , 45d , 645rc
+                { "2 April 2020" , "208" , "122" , "5" }, //3116c , 50d , 767rc
+                { "3 April 2020" , "217" , "60" , "3" }, //3333c , 53d , 827rc
+                { "4 April 2020" , "150" , "88" , "4" }, //3483c , 57d , 915rc 
+                { "5 April 2020" , "179" , "90" , "4" }, //3662c , 61d , 1005rc
+                { "6 April 2020" , "131" , "236" , "1" }, //3793c , 62d , 1241rc 
+                { "7 April 2020" , "170" , "80" , "1" }, //3963c , 63d , 1321rc
+                { "8 April 2020" , "156" , "166" , "2" }, //4119c , 65d , 1487rc
+                { "9 April 2020" , "109" , "121" , "2" }, //4228c , 67d , 1608rc
+                { "10 April 2020" , "118" , "222" , "3" }, //4346c , 70d , 1830rc
+                { "11 April 2020" , "184" , "165" , "3" }, //4530c , 73d , 1995rc 
+                { "12 April 2020" , "153" , "113" , "3" }, //4683c , 76d , 2108rc
+                { "13 April 2020" , "134" , "168" , "1" }, //4817c , 77d , 2276rc
+                { "14 April 2020" , "170" , "202" , "5" }, //4987c , 82d , 2478rc
+                { "15 April 2020" , "85" , "169" , "1" }, //5072c , 83d , 2647rc
+                { "16 April 2020" , "110" , "119" , "1" }, //5187c , 84d , 2766rc
+                { "17 April 2020" , "69" , "201" , "2" }, //5251c , 86d , 2967rc
+                { "18 April 2020" , "54" , "135" , "2" }, //5305c , 88d , 3102rc
+                { "19 April 2020" , "84" , "95" , "1" }, //5389c , 89d , 3197rc
+                { "20 April 2020" , "36" , "98" , "0" }, //5425c , 89d , 3295rc
+                { "21 April 2020" , "57" , "54" , "3" }, //5482c , 92d , 3349rc
+                { "22 April 2020" , "50" , "103" , "1" }, //5532c , 93d , 3452rc
+                { "23 April 2020" , "71" , "90" , "2" }, //5603c , 95d , 3542rc
+                { "24 April 2020" , "88" , "121" , "1" }, //5691c , 96d , 3663rc
+                { "25 April 2020" , "51" , "99" , "2" }, //5742c , 98d , 3762rc
+                { "26 April 2020" , "38" , "100" , "0" }, //5780c , 98d , 3862rc
+                { "27 April 2020" , "40" , "95" , "1" }, //5820c , 99d , 3957rc
+                { "28 April 2020" , "31" , "75" , "1" } //5851c , 100d , 4032rc
 
 
         };
@@ -41,23 +69,29 @@ namespace Project_ISB42403
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            int i, j;
+            string day;
 
-            for (i = 0; i < 3; i++)
-            {
+            string newcases = "";
+            string recovered = "";
+            string death = "";
 
+            string datefull = covid[0, 0];
 
-                string date = "Date" + covid[i, 0];
-                string total = "Total" + covid[i, 1];
+            newcases = covid[0, 1];
+            recovered = covid[0, 2];
+            death = covid[0, 3];
 
-               /* putherehtml.InnerHtml = "<div class='card' style='width: 18rem;'>" +
-                                        "<div class='card-body'>" +
-                                            "<h5 class='card-title'>" + total + "</h5>" +
-                                            "<p class='card-text'>Deaths</p>" +
-                                        "</div>" +
-                                     "</div>";*/
+            totalcase = totalcase + Convert.ToInt32(newcases);
+            totalrecovered = totalrecovered + Convert.ToInt32(recovered);
+            totaldeath = totaldeath + Convert.ToInt32(death);
 
-            }
+            lblshow.Text = datefull;
+            lbldeath.Text = death;
+            lblrecovered.Text = recovered;
+            lbl_newcases.Text = newcases;
+            lbltotalcases.Text = totalcase.ToString();
+            lbltotalrecovered.Text = totalrecovered.ToString();
+            lbltotaldeath.Text = totaldeath.ToString();
 
 
 
@@ -89,21 +123,29 @@ namespace Project_ISB42403
 
             string dateget = day + " " + month + " " + year;
 
-            for (i = 0; i < 14; i++)
+            for (i = 0; i < 42; i++)
             {
+
                 string datefull = covid[i,0];
+
+                newcases = covid[i, 1];
+                recovered = covid[i, 2];
+                death = covid[i, 3];
+
+                totalcase = totalcase + Convert.ToInt32(newcases);
+                totalrecovered = totalrecovered + Convert.ToInt32(recovered);
+                totaldeath = totaldeath + Convert.ToInt32(death);
 
 
                 if (dateget == datefull)
                 {
-                    newcases = covid[i, 1];
-                    recovered = covid[i, 2];
-                    death = covid[i, 3];
-
-
+                    lblshow.Text = datefull;
                     lbldeath.Text = death;
                     lblrecovered.Text = recovered;
                     lbl_newcases.Text = newcases;
+                    lbltotalcases.Text = totalcase.ToString();
+                    lbltotalrecovered.Text = totalrecovered.ToString();
+                    lbltotaldeath.Text = totaldeath.ToString();
 
                 }
 
@@ -111,7 +153,7 @@ namespace Project_ISB42403
 
             }
 
-            lblshow.Text = dateget;
+            
 
         }
         protected void monthchanges(object sender, EventArgs e)
