@@ -68,6 +68,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="assets\css\style.css" />
+    <Content Include="assets\images\logo\kkm.png" />
+    <Content Include="assets\images\logo\miit.jpg" />
+    <Content Include="assets\images\logo\unikl.png" />
+    <Content Include="assets\images\logo\wiki.png" />
+    <Content Include="assets\images\logo\zulyusmar.png" />
+    <Content Include="assets\images\team\hamzah.jpg" />
+    <Content Include="assets\images\team\hamzahs.jpg" />
+    <Content Include="assets\images\team\hasya.jpg" />
+    <Content Include="assets\images\team\soya.jpg" />
     <Content Include="assets\img\about.jpg" />
     <Content Include="assets\img\apple-touch-icon.png" />
     <Content Include="assets\img\counts-bg.png" />
