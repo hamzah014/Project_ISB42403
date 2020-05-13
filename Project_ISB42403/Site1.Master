@@ -36,41 +36,6 @@
     </asp:ContentPlaceHolder>
 </head>
 <body>
-
-    <%
-        string id = "";
-        string homeclass = "";
-        string infoclass = "";
-        string healthclass = "";
-        string sympthomclass = "";
-        string aboutclass = "";
-
-        if (Request.Url.AbsolutePath.Contains("Default"))
-        {
-            homeclass = "active";
-        }
-        else if (Request.Url.AbsolutePath.Contains("Information"))
-        {
-            infoclass = "active";
-        }
-        else if (Request.Url.AbsolutePath.Contains("Profiles"))
-        {
-            aboutclass = "active";
-        }
-        else if (Request.Url.AbsolutePath.Contains("Health"))
-        {
-            healthclass = "active";
-        }
-        else if (Request.Url.AbsolutePath.Contains("Sympthom"))
-        {
-            sympthomclass = "active";
-        }
-        else { 
-            homeclass = "active";
-        }
-      %>
-
-
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top" style="background-color: red;">
         <div class="container-fluid">
@@ -83,20 +48,17 @@
 
                     <nav class="nav-menu d-none d-lg-block">
                         <ul>
-                            <li class="<% Response.Write(homeclass); %>">
+                            <li class="active">
                                 <asp:DynamicHyperLink runat="server" NavigateUrl="~/Default.aspx">Home</asp:DynamicHyperLink>
                             </li>
-                            <li class="<% Response.Write(infoclass);  %>">
-                                <asp:DynamicHyperLink runat="server" NavigateUrl="~/Information.aspx">Information</asp:DynamicHyperLink>
+                            <li>
+                                <asp:DynamicHyperLink runat="server" NavigateUrl="~/Default.aspx">Information</asp:DynamicHyperLink>
                             </li>
-                            <li class="<% Response.Write(healthclass);  %>">
-                                <asp:DynamicHyperLink runat="server" NavigateUrl="~/Default.aspx">Health Advisory</asp:DynamicHyperLink>
+                            <li>
+                                <asp:DynamicHyperLink runat="server" NavigateUrl="~/HealthAdvisory.aspx">Health Advisory</asp:DynamicHyperLink>
                             </li>
-                            <li class="<% Response.Write(sympthomclass);  %>">
-                                <asp:DynamicHyperLink runat="server" NavigateUrl="~/Sympthom.aspx">Check Sympthoms</asp:DynamicHyperLink>
-                            </li>
-                            <li class="<% Response.Write(aboutclass);  %>">
-                                <asp:DynamicHyperLink runat="server" NavigateUrl="~/Profile.aspx">About Us</asp:DynamicHyperLink>
+                            <li>
+                                <asp:DynamicHyperLink runat="server" NavigateUrl="~/Default.aspx">Check Sympthoms</asp:DynamicHyperLink>
                             </li>
                         </ul>
                     </nav>
@@ -106,39 +68,12 @@
         </div>
     </header>
     <!-- End Header -->
-    <main id="main" runat="server">
+    <main id="main">
 
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         </asp:ContentPlaceHolder>
 
     </main>
-
-    
-  <!-- ======= Footer ======= -->
-  <footer id="footer" style="background:black !important;">
-    <div class="container">
-
-      <div class="copyright-wrap d-md-flex py-4">
-        <div class="mr-md-auto text-center text-md-left">
-          <div class="copyright">
-            &copy; Copyright <strong><span>Covid-Team</span></strong>. All Rights Reserved
-          </div>
-          <div class="credits">
-            Designed with love &hearts; by Covid News's Team 
-          </div>
-        </div>
-        <div class="social-links text-center text-md-right pt-3 pt-md-0">
-          <a href="https://twitter.com/KKMPutrajaya?s=20" class="twitter"><i class="bx bxl-twitter"></i></a>
-          <a href="https://www.facebook.com/kementeriankesihatanmalaysia/" class="facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="https://www.instagram.com/kementeriankesihatanmalaysia/?hl=en" class="instagram"><i class="bx bxl-instagram"></i></a>
-        </div>
-      </div>
-
-    </div>
-  </footer><!-- End Footer -->
-    
-    <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
-    <div id="preloader"></div>
 
     <script src="/assets/vendor/jquery/jquery.min.js"></script>
     <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
