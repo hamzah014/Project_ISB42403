@@ -7,12 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace Project_ISB42403
 {
-    public partial class Site1 : System.Web.UI.MasterPage
+    public partial class Profile : System.Web.UI.Page
     {
-
         protected void Page_Load(object sender, EventArgs e)
         {
-        
+
         }
     }
 }
