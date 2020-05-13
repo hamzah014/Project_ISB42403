@@ -96,6 +96,26 @@
           </div>
         </section>
 
+     <section id="video1" class="video1">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>How To Prevent Yourself From Coronavirus ?</h2>
+          
+        </div>
+          
+          <div class="container" data-aos="fade-up">
+         <div class="image col-lg-16 order-1 order-lg-2 " data-aos="zoom-in" data-aos-delay="100">
+         
+           <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/1APwq1df6Mw?rel=0" ></iframe>
+            </div>
+              &nbsp;&nbsp;&nbsp;&nbsp;<p>Original Source :<a href="https://www.youtube.com/watch?v=1APwq1df6Mw"> Video</a></p>
+        </div>
+     </div>
+          </div>
+        </section>
+
 <!-- ======= Frequently Asked Questions Section ======= -->
     <section id="faq" class="faq">
       <div class="container" data-aos="fade-up">
