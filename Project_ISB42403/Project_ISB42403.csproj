@@ -68,6 +68,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="assets\css\style.css" />
+    <Content Include="assets\images\logo\kkm.png" />
+    <Content Include="assets\images\logo\miit.jpg" />
+    <Content Include="assets\images\logo\unikl.png" />
+    <Content Include="assets\images\logo\wiki.png" />
+    <Content Include="assets\images\logo\zulyusmar.png" />
+    <Content Include="assets\images\team\hamzah.jpg" />
+    <Content Include="assets\images\team\hamzahs.jpg" />
+    <Content Include="assets\images\team\hasya.jpg" />
+    <Content Include="assets\images\team\soya.jpg" />
     <Content Include="assets\img\about.jpg" />
     <Content Include="assets\img\apple-touch-icon.png" />
     <Content Include="assets\img\counts-bg.png" />
@@ -133,19 +142,41 @@
     <Content Include="assets\vendor\venobox\venobox.min.css" />
     <Content Include="assets\vendor\venobox\venobox.min.js" />
     <Content Include="assets\vendor\waypoints\jquery.waypoints.min.js" />
+    <Content Include="CheckSympthom.aspx" />
     <Content Include="Default.aspx" />
+    <Content Include="HealthAdvisory.aspx" />
     <Content Include="Homepage.aspx" />
+    <Content Include="Images\banner covid.PNG" />
+    <Content Include="Images\flu2.jpg" />
+    <Content Include="Images\image1.png" />
+    <Content Include="Images\map 2.gif" />
+    <Content Include="Images\map.jpg" />
     <Content Include="Information.aspx" />
     <Content Include="Profile.aspx" />
+    <Content Include="Sympthom.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CheckSympthom.aspx.cs">
+      <DependentUpon>CheckSympthom.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CheckSympthom.aspx.designer.cs">
+      <DependentUpon>CheckSympthom.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HealthAdvisory.aspx.cs">
+      <DependentUpon>HealthAdvisory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HealthAdvisory.aspx.designer.cs">
+      <DependentUpon>HealthAdvisory.aspx</DependentUpon>
     </Compile>
     <Compile Include="Homepage.aspx.cs">
       <DependentUpon>Homepage.aspx</DependentUpon>
@@ -213,9 +244,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="assets\images\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
