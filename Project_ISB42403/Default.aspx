@@ -85,7 +85,7 @@
             <h1 class="display-3">Welcome to the COVID News</h1>
             <p class="lead">Get the latest Covid News information with focus on daily cases and world news. Visit our website to find out more the current outbreak in the covid news, COVID-19 | News and Statistic in the world</p>
             <p class="lead">
-            <a class="btn btn-info btn-lg btn-md" href="HealthAdvisory.aspx" role="button">More Info</a>
+            <a class="btn btn-info btn-lg btn-md" href="Information.aspx" role="button">More Info</a>
             </p>
             </div>
  
