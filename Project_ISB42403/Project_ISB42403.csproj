@@ -134,7 +134,13 @@
     <Content Include="assets\vendor\venobox\venobox.min.js" />
     <Content Include="assets\vendor\waypoints\jquery.waypoints.min.js" />
     <Content Include="Default.aspx" />
+    <Content Include="HealthAdvisory.aspx" />
     <Content Include="Homepage.aspx" />
+    <Content Include="Images\banner covid.PNG" />
+    <Content Include="Images\flu2.jpg" />
+    <Content Include="Images\image1.png" />
+    <Content Include="Images\map 2.gif" />
+    <Content Include="Images\map.jpg" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -144,6 +150,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HealthAdvisory.aspx.cs">
+      <DependentUpon>HealthAdvisory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HealthAdvisory.aspx.designer.cs">
+      <DependentUpon>HealthAdvisory.aspx</DependentUpon>
     </Compile>
     <Compile Include="Homepage.aspx.cs">
       <DependentUpon>Homepage.aspx</DependentUpon>
