@@ -142,6 +142,7 @@
     <Content Include="assets\vendor\venobox\venobox.min.css" />
     <Content Include="assets\vendor\venobox\venobox.min.js" />
     <Content Include="assets\vendor\waypoints\jquery.waypoints.min.js" />
+    <Content Include="CheckSympthom.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="HealthAdvisory.aspx" />
     <Content Include="Homepage.aspx" />
@@ -156,6 +157,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CheckSympthom.aspx.cs">
+      <DependentUpon>CheckSympthom.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CheckSympthom.aspx.designer.cs">
+      <DependentUpon>CheckSympthom.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
