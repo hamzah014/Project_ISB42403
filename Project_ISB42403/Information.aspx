@@ -35,8 +35,8 @@
         }
 
         .img-sos {
-            width:200px;
-            height:100px;
+            width: 100%;
+            height: 100%;
         }
     </style>
 
@@ -202,45 +202,66 @@
                     </div>
 
                 </div>
-
-                <hr />
-                <br /><br />
-                <div class="section-title">
-                    <h5><u>These are our referrence for our collection of Covid-19 data above.</u></h5>
-                </div>
-
-                <div class="row contact">
-
-                    <div class="col-md-4">
-                        <div class="info-box mb-4">
-                            <img src="assets/images/logo/kkm.png" alt="..." class="img-sos">
-                            <a target="_blank" href="https://www.moh.gov.my/index.php/pages/view/2274"><h3>Kementerian Kesihatan Malaysia</h3></a>
-                        </div>
-                    </div>
-                    
-                    <div class="col-md-4">
-                        <div class="info-box mb-4">
-                            <img src="assets/images/logo/wiki.png" alt="..." class="img-sos">
-                            <a target="_blank" href="https://en.wikipedia.org/wiki/COVID-19_pandemic_in_Malaysia"><h3>Wikipedia</h3></a>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="info-box mb-4">
-                            <img src="assets/images/logo/zulyusmar.png" alt="..." class="img-sos">
-                            <a target="_blank" href="http://zulyusmar.com/"><h3>Zulyusmar.com</h3></a>
-                        </div>
-                    </div>
-
-
-
-                </div>
-
-
             </form>
         </div>
     </section>
     <!-- End Services Section -->
+
+    <hr />
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+        <div class="container" data-aos="fade-up">
+
+            <div class="section-title">
+                <h2>Our Source of Data</h2>
+                <p></p>
+            </div>
+            <div class="row portfolio-container">
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                    <div class="portfolio-wrap">
+                        <img src="assets/images/logo/kkm.png" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Kementerian Kesihatan Malaysia</h4>
+                        </div>
+                        <div class="portfolio-links">
+                            <a target="_blank" href="https://www.moh.gov.my/index.php/pages/view/2274" title="KKM Website"><i class="bx bx-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                    <div class="portfolio-wrap">
+                        <img src="assets/images/logo/wiki.png" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Wikipedia</h4>
+                        </div>
+                        <div class="portfolio-links">
+                            <a target="_blank" href="https://en.wikipedia.org/wiki/COVID-19_pandemic_in_Malaysia" title="Wikipedia Link"><i class="bx bx-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                    <div class="portfolio-wrap">
+                        <img src="assets/images/logo/zulyusmar.png" class="img-fluid" alt="" style="">
+                        <div class="portfolio-info">
+                            <h4 class="pt-4">Zulyusmar</h4>
+                        </div>
+                        <div class="portfolio-links">
+                            <a target="_blank" href="http://zulyusmar.com/" title="Zulyusmar Website"><i class="bx bx-link pb-4"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </section>
+    <!-- End Portfolio Section -->
 
 
 </asp:Content>

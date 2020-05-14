@@ -68,6 +68,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="assets\css\style.css" />
+    <Content Include="assets\images\about\corona.jpg" />
+    <Content Include="assets\images\about\covid.png" />
+    <Content Include="assets\images\about\teampro.png" />
+    <Content Include="assets\images\about\usteam.png" />
     <Content Include="assets\images\logo\kkm.png" />
     <Content Include="assets\images\logo\miit.jpg" />
     <Content Include="assets\images\logo\unikl.png" />

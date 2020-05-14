@@ -83,7 +83,7 @@
                         <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                     </p>
                     <img src="assets/images/team/hamzahs.jpg" class="testimonial-img" alt="Hamzah">
-                    <h3>Muhammd Hamzah Bin Mohd Jamal</h3>
+                    <h3>Muhammad Hamzah Bin Mohd Jamal</h3>
                     <h4>Programmer &hearts; (52213220108)</h4>
                 </div>
 

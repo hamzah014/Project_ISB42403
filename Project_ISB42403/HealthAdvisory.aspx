@@ -24,8 +24,11 @@
                 <div class="embed-responsive embed-responsive-16by9">
                     <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/seA1wbXUQTs?rel=0"></iframe>
                 </div>
+
+                
+            <p>Original Source :<a href="https://www.youtube.com/watch?v=seA1wbXUQTs/"> Video</a></p>
+
             </div>
-            &nbsp;&nbsp;&nbsp;&nbsp;<p>Original Source :<a href="https://www.youtube.com/watch?v=seA1wbXUQTs/"> Video</a></p>
 
             <div class="container" data-aos="fade-up">
                 <br />
@@ -96,7 +99,7 @@
         <div class="container" data-aos="fade-up">
 
             <div class="section-title">
-                <h2>What should you do with Coronovairus?</h2>
+                <h2>What should you do with Corona virus?</h2>
 
             </div>
 
@@ -117,7 +120,7 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>How To Prevent Yourself From Coronavirus ?</h2>
+          <h2>How To Prevent Yourself From Corona virus ?</h2>
           
         </div>
           
