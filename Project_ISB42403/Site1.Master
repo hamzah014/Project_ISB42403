@@ -32,6 +32,17 @@
     <!-- Template Main CSS File -->
     <link href="/assets/css/style.css" rel="stylesheet">
 
+    <style>
+        .footerstail {
+            background-color: black !important;
+            color: #fff;
+            font-size: 14px;
+            background: black;
+            background-size: cover;
+            display: block;
+        }
+    </style>
+
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
@@ -47,27 +58,27 @@
 
         if (Request.Url.AbsolutePath.Contains("Default"))
         {
-             home = "active";
+            home = "active";
         }
-        else if(Request.Url.AbsolutePath.Contains("HealthAdvisory"))
+        else if (Request.Url.AbsolutePath.Contains("HealthAdvisory"))
         {
-             health = "active";
+            health = "active";
         }
-        else if(Request.Url.AbsolutePath.Contains("Information"))
+        else if (Request.Url.AbsolutePath.Contains("Information"))
         {
-             info = "active";
+            info = "active";
         }
-        else if(Request.Url.AbsolutePath.Contains("Sympthom"))
+        else if (Request.Url.AbsolutePath.Contains("Sympthom"))
         {
-             simtom = "active";
+            simtom = "active";
         }
-        else if(Request.Url.AbsolutePath.Contains("Profile"))
+        else if (Request.Url.AbsolutePath.Contains("Profile"))
         {
-             profile = "active";
+            profile = "active";
         }
         else
         {
-             home = "active";
+            home = "active";
         }
     %>
 
@@ -113,6 +124,34 @@
         </asp:ContentPlaceHolder>
 
     </main>
+
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footerstail">
+        <div class="container">
+
+            <div class="copyright-wrap d-md-flex py-4">
+                <div class="mr-md-auto text-center text-md-left">
+                    <div class="copyright">
+                        &copy; Copyright <strong><span>Covid News</span></strong>. All Rights Reserved
+                    </div>
+                    <div class="credits">
+                        Designed with &hearts; by CovidNews's Team
+                    </div>
+                </div>
+                <div class="social-links text-center text-md-right pt-3 pt-md-0">
+                    <a href="https://twitter.com/KKMPutrajaya?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="twitter"><i class="bx bxl-twitter"></i></a>
+                    <a href="https://www.facebook.com/kementeriankesihatanmalaysia/" class="facebook"><i class="bx bxl-facebook"></i></a>
+                    <a href="https://www.instagram.com/kementeriankesihatanmalaysia/?hl=en" class="instagram"><i class="bx bxl-instagram"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+    <div id="preloader"></div>
 
     <script src="/assets/vendor/jquery/jquery.min.js"></script>
     <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

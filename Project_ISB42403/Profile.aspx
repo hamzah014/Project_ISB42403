@@ -1,8 +1,35 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Profile.aspx.cs" Inherits="Project_ISB42403.Profile" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+
+    <style>
+        .covidnew {
+            background-color: white;
+            padding: 10px;
+            width: max-content;
+        }
+    </style>
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="d-flex align-items-center">
+
+        <div class="container-fluid" data-aos="fade-up">
+            <div class="row justify-content-center">
+                <div class="col-xl-5 col-lg-6 pt-3 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+                    <h1 class="text-danger covidnew">Covid News Team</h1>
+                    <h2 class="covidnew text-dark">Let's spread awarness around the world!</h2>
+                </div>
+                <div class="col-xl-4 col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="150">
+                    <img src="assets/images/about/covid.png" class="img-fluid animated" alt="">
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- End Hero -->
 
 
     <!-- ======= Testimonials Section ======= -->
@@ -10,8 +37,38 @@
         <div class="container" data-aos="fade-up">
 
             <div class="section-title">
+
                 <h2>About Us</h2>
-                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+
+                <div class="row">
+                    <div class="col-md-12 text-justify">
+                        <p>
+                            <b>Hi everyone!</b>
+                            <b class="text-danger">Covid-19</b> has spreading worldwide, and it worried us. So, we take this advantage in project assessment for our subject, 
+                            <i class="text-primary">Web Application Development (ISB42403)</i>, to build web application that going to help people to be more aware with situation right now. 
+                            We are doing our best on spreading awareness for everyone. <b>Let's fight this together!</b>
+
+                        </p>
+                        <br />
+                        <br />
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <img src="assets/images/about/teampro.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <img src="assets/images/about/usteam.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <br />
+            <br />
+            <hr />
+            <br />
+            <br />
+
+            <div class="section-title">
+                <h2>Meet Our Team</h2>
             </div>
 
             <div class="owl-carousel testimonials-carousel">
@@ -22,7 +79,7 @@
 
                         Take care everyone! Plesae <b>#stayhome #stayhome</b> ! Always put on your mask when you go out, and washes your hand frequently. 
                         Alwyas keep our social distancing, and don't go out if not important. <b>Let's together we fight this! We can do it!</b>
-                        
+
                         <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                     </p>
                     <img src="assets/images/team/hamzahs.jpg" class="testimonial-img" alt="Hamzah">
@@ -33,12 +90,13 @@
                 <div class="testimonial-item">
                     <p>
                         <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                        Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                        Now it's time for the rest of us to do our bit to <b>stop the uncontrolled spread of this damned virus!</b> Good luck to everyone, 
+                        best thing to do is to stay at home. <b>#wearyourmask #socialdistancing #stayathome #staysafe</b>
                         <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                     </p>
                     <img src="assets/images/team/soya.jpg" class="testimonial-img" alt="Sooya">
-                    <h3>Nur Aisyah</h3>
-                    <h4>Programmer &hearts; (52213220108)</h4>
+                    <h3>Nur Aisyah Binti Mohamad Ihsan</h3>
+                    <h4>Programmer &hearts; (52213220001)</h4>
                 </div>
 
                 <div class="testimonial-item">
@@ -48,15 +106,15 @@
                         <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                     </p>
                     <img src="assets/images/team/hasya.jpg" class="testimonial-img" alt="Hasya">
-                    <h3>Hasya</h3>
-                    <h4>Programmer &hearts; (52213220108)</h4>
+                    <h3>Hasyahaziqa Binti Abulae's</h3>
+                    <h4>Programmer &hearts; (52213220086)</h4>
                 </div>
-
-
             </div>
 
             <br />
+            <br />
             <hr />
+            <br />
             <br />
 
             <div class="section-title">
@@ -70,9 +128,11 @@
             <div class="row">
 
                 <div class="col-md-6">
-                    <img style="width: 100%" src="assets/images/logo/unikl.png" alt="unikl"></div>
+                    <img style="width: 100%" src="assets/images/logo/unikl.png" alt="unikl">
+                </div>
                 <div class="col-md-6">
-                    <img style="width: 100%" src="assets/images/logo/miit.jpg" alt="unikl"></div>
+                    <img style="width: 100%" src="assets/images/logo/miit.jpg" alt="unikl">
+                </div>
 
             </div>
 
